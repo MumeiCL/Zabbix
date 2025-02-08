@@ -46,9 +46,12 @@ chmod +x /usr/lib/zabbix/alertscripts/telegram.sh
 ![image](https://github.com/user-attachments/assets/01d734c7-9b7d-4b02-a132-39f2aeb182cd)
 Nhấn Create media type và điền thông tin:
 Name: Telegram Alert
+
 Type: Chọn Script
+
 Script name: Nhập telegram.sh
 
+Parameters: ```{ALERT.MESSAGE}```
 ## Liên Kết Media với Người Dùng
 ![image](https://github.com/user-attachments/assets/81a2dbe8-067b-4bbe-8bb1-93c08aa487b8)
 
@@ -64,9 +67,13 @@ Use if severity: Chọn mức độ cảnh báo mà user này sẽ nhận (ví d
 ![image](https://github.com/user-attachments/assets/3cffe3e8-3780-44fe-bf00-df8c42667137)
 
 Chọn hoặc tạo Action mới (ví dụ: “Send Telegram alerts”).
+
 Trong tab Operations, thêm một Operation:
+
 Send to Users: Chọn user đã cấu hình Media Telegram.
+
 Send only to: Chọn Telegram Alert.
+
 Thiết lập các điều kiện (Conditions) sao cho phù hợp với các trigger mà bạn muốn gửi thông báo.
 
 
@@ -74,3 +81,5 @@ Thiết lập các điều kiện (Conditions) sao cho phù hợp với các tri
 
 ## Kiểm Tra Hoạt Động
 kích hoạt một trigger để kiểm tra xem Zabbix có gửi thông báo tự động qua Telegram hay không.
+![image](https://github.com/user-attachments/assets/5b63e68c-6285-4eb3-bcf0-1ec42a1cad00)
+
